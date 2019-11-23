@@ -7,4 +7,5 @@
         "authkey": "CTFPAD_AUTHKEY",
         "useHTTPS": CTFPAD_USE_HTTPS,
         "proxyUseHTTPS": CTFPAD_PROXY_USE_HTTPS
+	"team_name": CTFPAD_TEAM_NAME
 }

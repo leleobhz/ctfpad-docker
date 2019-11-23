@@ -49,7 +49,7 @@ _configure_ctfpad() {
     echo "configuring ctfpad..."
     _pwd="/ctfpad/ctfpad/"
     cp "$_pwd/config.template.json" "$_pwd/config.json"
-    _apply_envs "$_pwd/config.json" CTFPAD_PORT ETHERPAD_PORT ETHERPAD_INTERNAL_PORT CTFPAD_SSL_KEY_FILE CTFPAD_SSL_CERT_FILE CTFPAD_AUTHKEY CTFPAD_USE_HTTPS CTFPAD_PROXY_USE_HTTPS
+    _apply_envs "$_pwd/config.json" CTFPAD_PORT ETHERPAD_PORT ETHERPAD_INTERNAL_PORT CTFPAD_SSL_KEY_FILE CTFPAD_SSL_CERT_FILE CTFPAD_AUTHKEY CTFPAD_USE_HTTPS CTFPAD_PROXY_USE_HTTPS CTFPAD_TEAM_NAME
     chown ctfpad:ctfpad "$_pwd/config.json"
 }
 
@@ -69,6 +69,7 @@ ETHERPAD_INTERNAL_PORT=${ETHERPAD_INTERNAL_PORT:="9001"}
 MYSQL_HOST=${MYSQL_HOST:=""}
 MYSQL_USER=${MYSQL_USER:=""}
 MYSQL_PASSWORD=${MYSQL_PASSWORD:=""}
+CTFPAD_TEAM_NAME=${CTFPAD_TEAM_NAME:=""}
 
 # ensure, /data is there
 mkdir -p /data

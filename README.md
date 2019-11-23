@@ -52,6 +52,9 @@ services:
             - MYSQL_USER=
             - MYSQL_PASSWORD=
 
+            # change team name
+            - CTFPAD_TEAM_NAME=ctfpad
+
         volumes:
             - ./ctfpad_data:/data:z
 ```
