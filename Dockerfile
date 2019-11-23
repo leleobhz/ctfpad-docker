@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-LABEL maintainer="lucebac <docker@lucebac.net>"
+LABEL maintainer="Leonardo Amaral <desenvolvimento@zenithtecnologia.com.br"
 
 RUN apk add -U --no-cache curl unzip nodejs nodejs-npm sqlite openssl git python file \
     && adduser -D ctfpad \
@@ -10,7 +10,7 @@ WORKDIR /ctfpad
 
 # setup ctfpad
 RUN cd /ctfpad \
-    && git clone https://github.com/StratumAuhuur/CTFPad ctfpad \
+    && git clone https://github.com/supitto/CTFPad ctfpad \
     && cd ctfpad \ 
     && npm install
 

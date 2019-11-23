@@ -2,7 +2,7 @@
 Dockerized version of CTFPad by StratumAuhuur.
 
 # Setup
-`docker pull lucebac/ctfpad`
+`docker pull pqatsi/ctfpad`
 
 # Run
 It is recommended to use `docker-compose` to run an manage this container. An example compose file is provided below.
