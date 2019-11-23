@@ -1,5 +1,5 @@
 # CTFPad Docker Container
-Dockerized version of CTFPad by StratumAuhuur.
+Dockerized version of CTFPad by StratumAuhuur and modified by Suppito.
 
 # Setup
 `docker pull pqatsi/ctfpad`
